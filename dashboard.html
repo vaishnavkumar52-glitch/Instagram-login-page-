@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-box">
+  <h2>Assignment Demo Dashboard</h2>
+
+  <p><strong>Email Entered:</strong> <span id="showEmail"></span></p>
+  <p><strong>Password Entered:</strong> <span id="showPassword"></span></p>
+
+  <p class="note">This is a demo. No data is saved or sent anywhere.</p>
+</div>
+
+<script>
+  document.getElementById("showEmail").innerText = localStorage.getItem("demoEmail");
+  document.getElementById("showPassword").innerText = localStorage.getItem("demoPassword");
+</script>
+
+</body>
+</html>
+
+
+---
